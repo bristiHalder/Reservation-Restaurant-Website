@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine Dash Resturant </title>
+
+    <!--Google Font CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <!--Font awesome cdn -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--navbar-->
+        <nav class="navbar">
+            
+            <!--logo-->
+            <img src="DashDinee.png" class="logo" alt="logo">
+
+            <!--ul-->
+            <ul class="links-container">
+                <li class="link-items"><a href="#" class="links" data-section="hero-section">Home</a></li>
+                <li class="link-items"><a href="#" class="links" data-section="menu-section">Menu</a></li>
+                <!--<li class="link-items"><a href="#" class="links" onclick='window.location.href="http://127.0.0.1:5501/Responsive-Restaurant-Website/order.html";'>Reservation</a></li>-->
+                <li class="link-items"><a href="#" class="links" data-section="faq-section">FAQs</a></li>
+                <li class="link-items"><a href="#" class="links" data-section="footer">Contact Us</a></li>
+            </ul>
+            
+            
+        
+        <!--Search Box
+        <div class="nav-extras">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="Search Restaurants, Cuisine....">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            cart bin
+            <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <div class="nav-toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>-->
+
+        </nav>
+
+        <!--hero section-->
+
+        <main id="hero-section">
+
+            <!--Content-->
+            <div class="hero-content">
+                <h1 class="hero-heading">Eat the best</h1>
+                <p class="hero-line">Explore and understand the culture more by tasting the amazing dishes of the culture.</p>
+
+                <!--<div class="search location">
+                    <input type="text" class="search-box" placeholder="Search Restaurants, Cuisine....">
+                    <button class="search-btn locate-btn"><i class="fa-solid fa-location-crosshairs"></i></button>
+                </div>  --> 
+                
+                <div class="hero-action-btn-container">
+                    <button class="btn" onclick='console.log("hello");'>
+                        <a href="http://127.0.0.1:5501/Responsive-Restaurant-Website/order.html" style="text-decoration: none;">Make a reservation</a>
+                    </button>
+                    <p class="or">or</p>
+                    <button class="btn transparent" onClick="document.getElementById('menu-section').scrollIntoView();" >Explore the Menu</button>
+
+                </div>
+                
+                
+            </div>
+
+            <!--hero image container-->
+
+            <div class="hero-img-container">
+                <div class="background-ele" data-aos="fade-in" data-aos-delay="700">
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                    <div class="ellipse"></div>
+                </div>
+
+                <div class="forground-elements">
+                    <img src="biryani.png" data-aos="zoom-in" data-aos-delay="0" class="hero-img" alt="">
+                    <img src="burger.png" data-aos="zoom-in" data-aos-delay="150" class="hero-img" alt="">
+                    <img src="pizza.png" data-aos="zoom-in" data-aos-delay="300" class="hero-img" alt="">
+
+                    <div class="review-box" data-aos="zoom-in" data-aos-delay="450">
+                        <div class="reviewer-info" data-aos="zoom-out" data-aos-delay="600">
+                            <img src="user-1.png" class="reviewer-img" alt="user">
+
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Arik</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body" data-aos="zoom-out" data-aos-delay="650">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> The resturant was good. Staff was very welcoming and the food...well no words for it. Chef was amazing and the view of sky from the top deck was fabulous.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </header>
+
+    <!--restaurant section-->
+    <section id="restaurants-section">
+
+        <div class="leaf-layer right" data-aos="zoom-in-up">
+            <img src="leaf-right.png" alt="">
+        </div>
+
+        <div class="section">
+
+            <!--food image container-->
+            <div class="food-img-container">
+                <div class="circle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="circle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="food-img-animation-wrapper" data-aos="fade">
+                    <img src="food-1.png" class="food-img" alt="dish">
+                    <img src="food-2.png" class="food-img" alt="dish">
+                    <img src="food-3.png" class="food-img" alt="dish">
+                    <img src="food-4.png" class="food-img" alt="dish">
+                    <img src="food-5.png" class="food-img" alt="dish">
+                    <img src="food-6.png" class="food-img" alt="dish">
+                    <img src="food-7.png" class="food-img" alt="dish">
+                </div>
+
+            </div>
+
+            <!--section content-->
+            <div class="section-detail">
+                <span class="section-highlight">From our professional chefs</span>
+                <p class="section-title">1000+</p>
+                <p class="section-info">Choose from our wide selection of over dishes and beverages curated by professional chefs. Catering to every taste and mood.</p>
+
+                <!--<button class="btn">Order Food</button>-->
+            </div>
+
+        </div> 
+        
+        
+        <div class="restaurants-container" id="menu-section">
+            <div class="restaurant">
+                <p class="discount">50% Off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-1.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Burger Haven</h3>
+                    <p class="menu">Classic Burgers, Crispy Fries, Chicken Nuggets</p>
+                    <!--<p class="place">New York</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+
+            </div>
+
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-2.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Pasta Paradise</h3>
+                    <p class="menu">Authentic Pasta, Delicious Pizza, Spaghetti Delights</p>
+                    <!--<p class="place">Italy</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+
+            </div>
+
+            <div class="restaurant">
+                <p class="discount">50% Off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-3.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">French Delights</h3>
+                    <p class="menu">Delectable Burgers, Gourmet Fries, Savory Nuggets</p>
+                    <!--<p class="place">Paris</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-4.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Indian Spice</h3>
+                    <p class="menu">Flavorful Indian Cuisine</p>
+                    <!--<p class="place">New York</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+
+            </div>
+
+            <div class="restaurant">
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-5.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Dragon Wok</h3>
+                    <p class="menu">Authentic Chinese Cuisine, Mouthwatering Noodles</p>
+                    <!--<p class="place">New York</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+
+            </div>
+
+            <div class="restaurant">
+                <p class="discount">50% Off</p>
+                <div class="restaurant-thumbnail">
+                    <img src="restaurant-6.png" class="restaurant-img" alt="dish">
+                </div>
+                <div class="restaurant-body">
+                    <h3 class="restaurant-name">Chicken Delights</h3>
+                    <p class="menu">Crispy Chicken Nuggets, Chicken Wings, and More</p>
+                    <!--<p class="place">Italy</p>-->
+                    <span class="rating">4.2<i class="fa-solid fa-star"></i></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="leaf-layer left">
+            <img src="leaf-left.png" alt="leaf">
+        </div>
+
+    </section>
+
+    <!--about section-->
+    <section id = "about-section">
+
+        <div class="about-us-review-container" data-aos="zoom-in-up">
+
+            <div class="circle"></div>
+            <img src="pizza-pan.png" class="pizza-pan-img" alt="">
+
+            <div class="reviews-container">
+                <div class="review-wrapper" style="--aos-delay: 250ms;">
+                    <img src="user-5.png" class="reviewer-img" alt="user">
+                    <div class="review-box">
+                        <div class="reviewer-info">
+                            
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Saarah</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well.</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="review-wrapper" style="--aos-delay: 300ms;">
+                    <img src="user-4.png" class="reviewer-img" alt="user">
+                    <div class="review-box">
+                        <div class="reviewer-info">
+                            
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Stefhan</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> Breakfast was delicious. Like a good homestyle country savory breakfast (and Im from the south, thats saying a lot)… Enjoyed the whole experience and definitely recommend this place for a place to eat on the cape.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="review-wrapper" style="--aos-delay: 350ms;">
+                    <img src="user-3.png" class="reviewer-img" alt="user">
+                    <div class="review-box">
+                        <div class="reviewer-info">
+                            
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Jane</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> Very good service, good menu … not overly extensive. Food was very good quality all around. They know how to prepare home fries and their omelets are top-notch. Prices were reasonable.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="review-wrapper" style="--aos-delay: 400ms;">
+                    <img src="user-2.png" class="reviewer-img" alt="user">
+                    <div class="review-box">
+                        <div class="reviewer-info">
+                            
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Jennifer</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> Potato pancakes were good. Will try the hash next time. Biscuits were great also.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="review-wrapper" style="--aos-delay: 450ms;">
+                    <img src="user-1.png" class="reviewer-img" alt="user">
+                    <div class="review-box">
+                        <div class="reviewer-info">
+                            
+                            <div class="reviewer">
+                                <div class="reviewer-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <p>4.5</p>
+                                </div>
+
+                                <h2 class="reviewer-name">Arik</h2>
+                            </div>
+                        </div> 
+
+                        <div class="review-body">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p class="review"> If we are lucky, we go for dinner one day and breakfast another. The dinner menu is varied enough for a family like mine that has only one seafood eater. The pasta and pizza are delicious! The breakfast menu is equally varied. I could have ordered at least 6 items on the menu. The service is great, prices are reasonable. The dining room and restrooms are clean and well maintained. Two thumbs up and 5 stars!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--about services-->
+        <div class="about">
+            <h2 class="about-title">Why Us ?</h2>
+            
+            <p class="about-info">We serves the best in taste. Our customers is our number 1 priority. See what others think about us</p>
+
+            <div class = "services-container">
+                <div class="service">
+                    <div class="service-title">
+                        <img src="fastest-delivery.png" class="service-img" alt="service">
+                        <h3 class="service-name">Quick Reservation</h3>
+                    </div>
+                    <p class="service-detail">We pride ourselves on our swift reservation service, ensuring you can secure your table hassle-free and enjoy your dining experience without delay. Make your reservation with us today!</p>
+                </div>
+
+                <div class="service">
+                    <div class="service-title">
+                        <img src="best-prices.png" class="service-img" alt="service">
+                        <h3 class="service-name"> Best Prices</h3>
+                    </div>
+                    <p class="service-detail">We strive to offer you the best prices without compromising on quality. Our commitment to affordability means you can enjoy delicious meals without breaking the bank.</p>
+                </div>
+
+                <div class="service">
+                    <div class="service-title">
+                        <img src="20+ restaurant.png" class="service-img" alt="service">
+                        <h3 class="service-name">Wide Selection</h3>
+                    </div>
+                    <p class="service-detail">Discover a wide selection of dining options whether you're craving Italian, Asian, or American cuisine, we've got you covered. Browse our selection and reserve your spot now!</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="faq-section">
+
+        <h1 class="section-title">Frequently Ask Questions</h1>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">How can I cancel my reservation ?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="answer-box">
+                <p class="answer">To cancel your reservation, locate your confirmation email. Click the provided cancellation link and follow the instructions. Confirm the cancellation and check your email for confirmation. If you need assistance, contact the restaurant directly.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">How can I modify my reservation details ?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="answer-box">
+                <p class="answer">To modify your reservation details, such as the date or number of guests, please contact our restaurant directly. You can find our contact details in your reservation confirmation email. Inform us about the changes you'd like to make, and our team will accommodate your request, subject to availability.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">How can I contact the restaurant ?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="answer-box">
+                <p class="answer">You can contact our restaurant by phone or email. Our contact details are provided in your reservation confirmation email. If you have any questions or need assistance, feel free to reach out to us, and our team will be happy to assist you.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question-box">
+                <h3 class="question">My payment is declining. What should I do ?</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="answer-box">
+                <p class="answer">Contact your bank to resolve any card issues, and if problems persist, reach out to our customer support team for assistance. We're here to help make your ordering experience as smooth as possible.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--download app section-->
+    <section id="download-app-section">
+        <div class="section">
+
+            <div class="download-app-image-container">
+                <div class="pulse" data-aos="zoom-in-up">
+                    <div class="circle pulse-animate"></div>
+                    <div class="circle"></div>
+                </div>
+                <img src="leafs.png" data-aos="zoom-in" data-aos-delay="200" class="leaf-left" alt="leaf">
+                <img src="leaf-left.png" data-aos="zoom-in" data-aos-delay="300" class="leaf-right" alt="leaf">
+
+                <img src="app.png" data-aos="phone-mockup-fade" data-aos-delay="200" class="phone-mockup" alt="phone">
+            </div>
+
+
+            <div class="section-detail">
+                <span class="section-highlight">Download our app to stay updated</span>
+                <p class="section-title">Make reservations from your phone</p>
+                <p class="section-info">Get extra feature on app including managing account and much more.</p>
+
+                <div class ="download-btn-group">
+                    <a href="#" class="download-btn"> <img src="play-store.png" alt="play-store"></a>
+                    <a href="#" class="download-btn"> <img src="app-store.png" alt="app-store"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--discount banner-->
+    <div class="discount-banner" data-aos="flip-up">
+        <div class="section-detail">
+            <h1 class="section-title">Get an extra 20% off on your first reservation</h1>
+            <p class="section-info">Use this code during checkout</p>
+            <p class="discount-code">DINEDASH20</p>
+        </div>
+    </div>
+<!--
+    <div class="dish-slide">
+        <img src="discount-food-slider-1.png" alt="">
+        <img src="pizza.png" alt="">
+        <img src="burger.png" alt="">
+    </div> -->
+
+    <section id="footer">
+        <div class="company-info">
+            <img src="DashDinee.png" class="logo" alt="Logo">
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class ="download-btn-group">
+                <a href="#" class="download-btn"> <img src="play-store.png" alt="play-store"></a>
+                <a href="#" class="download-btn"> <img src="app-store.png" alt="app-store"></a>
+            </div>
+        </div>
+
+        
+        <!--<div class="useful-links footer-links-container">
+            <h5 class="footer-links-title">Useful Links</h5>
+            <a href="#" class="footer-links">Menu</a>
+            <a href="#" class="footer-links">Restaurants</a>
+            <a href="#" class="footer-links">Your Orders</a>
+            <a href="#" class="footer-links">Track Order</a>
+            <a href="#" class="footer-links">Support</a>
+                
+        </div>-->
+
+        <div class="information footer-links-container">
+            <h5 class="footer-links-title">Information</h5>
+            <a href="#" class="footer-links">About Us</a>
+            <a href="#" class="footer-links">Privacy Policy</a>
+            <a href="#" class="footer-links">Terms & Conditions</a>
+            <a href="#" class="footer-links">What info we collect?</a>
+        </div>
+
+        <div class="contact footer-links-container">
+            <h5 class="footer-links-title"> Contact Us</h5>
+            <a href="#" class="footer-links">Our main restaurant is located on Street 231,NYC</a>
+            <a href="#" class="footer-links">Phone - +00 1234567890</a>
+            <a href="#" class="footer-links">Email - help@login.com</a>
+        </div>
+
+        <div class="payment-patners">
+            <img src="visa.png" alt="visa">
+            <img src="master-card.png" alt="master-card">
+            <img src="paypal.png" alt="paypal">
+            <img src="stripe.png" alt="stripe">
+            <img src="apple-pay.png" alt="apple-pay">
+            <img src="google-pay.png" alt="google-pay">
+        </div>
+
+        <p class="payment-patners-text">Fully secured payment gateways by trusted companies</p>
+
+        <p class="copyright">Designed by Bristi Halder</p>
+
+    </section>
+
+    <div id="translate"></div>
+
+    <!-- JavaScript -->
+    <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <script>
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,es,fr,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'translate');
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function reserveFunc()
+        {
+           a.href="http://127.0.0.1:5501/Responsive-Restaurant-Website/order.html";
+           console.log("reserve");
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
