@@ -1,4 +1,4 @@
-# Responsive-Restaurant-Website
+# Reservation-Restaurant-Website
 This project is a responsive website for a restaurant, designed to provide information about the restaurant, its menu, and allow users to make reservations.
 
 # Features
